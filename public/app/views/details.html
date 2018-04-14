@@ -1,0 +1,17 @@
+<h2>View or Update Customer</h2>
+<form ng-model="custDetails">
+    <input type="text" placeholder="Id" ng-model="custDetails.userid"><br/>
+    Name: <input type="text" placeholder="Name" ng-model="custDetails.name"><br/>
+    Phone: <input type="text" placeholder="Phone" ng-model="custDetails.phone"><br/>
+    Address: <input type="text" placeholder="Address" ng-model="custDetails.address"><br/>
+    Postal Code: <input type="text" placeholder="Postal Code" ng-model="custDetails.potalCd"><br/>
+    Balance: <input type="text" placeholder="Balance" ng-model="custDetails.balance"><br/>
+
+    <button ng-click="getAllCusts()">Get All</button>
+    <button ng-click="updateCust()">Update</button>
+    <button ng-click="deleteCust()">Delete</button>
+    <button ng-click="addCust()">New Customer</button>
+
+</form>
+
+
