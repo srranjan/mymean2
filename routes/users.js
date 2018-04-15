@@ -50,7 +50,9 @@ if (mongo) {               //Trying to make it CF ready, not tested though
 }
 }
 } //The brace added for kuber thingy
-var mongoUrl = connStr + '/myStore';
+//var mongoUrl = connStr + '/myStore';
+//The following for openshift version
+var mongoUrl = connStr + '/sampledb';
 
 //End Get mongO URI
 
