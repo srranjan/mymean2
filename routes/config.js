@@ -5,6 +5,7 @@
 
 module.exports = {
     'remoteUrl' : 'http://localhost:9091/clients/',
-	'mykubermongo' : 'mymongo',       //Comment out if not using Kubernetes, otherwise this will break the code in other environments
+      //Value below changed from mymong to mongdb-persisten for openshift template requirement
+	'mykubermongo' : 'mongodb-persistent',       //Comment out if not using Kubernetes, otherwise this will break the code in other environments
     'other' : ''
 }
