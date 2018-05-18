@@ -13,7 +13,7 @@ var http = require('http');
  */
 
 //Begin Rajiv - trying to make it cloud foundry ready - not tested really
-var myPort = (process.env.VCAP_APP_PORT || 7071) ;
+var myPort = (process.env.VCAP_APP_PORT || 8080) ;
 var myHost = (process.env.VCAP_APP_HOST || 'localhost') ;
 //End Rajiv
 
