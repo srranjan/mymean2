@@ -27,6 +27,7 @@ var connStr = "";
 if (mykubermongo) { //latest twist added for Kuber, be careful to comment the config file for kuber entry if not using kuber
 //Adding userid/password for OpenShift (hope it works also when userid/password not needed)
 	connStr = 'mongodb://rranjan:rranjan01@' + mykubermongo + ':27017';
+    //connStr = 'mongodb://' + mykubermongo + ':27017';// When not using OpenShift or a secured mongo
 	
 } else {
 if (process.env.myMongoHOST) {  //Trying to make the code docker friendly also
